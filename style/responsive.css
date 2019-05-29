@@ -21,6 +21,14 @@
         object-fit: cover;
     }
     
+    .index{
+        bottom:15px;
+    }
+
+    .prev, .next, .dot{
+        bottom: 0;
+    }
+    
     .newsBar{
         width: calc(100vw * 0.65);
         height: auto;
@@ -70,6 +78,10 @@
         height:inherit;
         object-position: center;
         object-fit: cover;
+    }
+    
+    .prev, .next, .index{
+        top: 85%;
     }
     
     .newsBar{
@@ -132,6 +144,17 @@
         height:inherit;
         object-position: center;
         object-fit: cover;
+    }
+    
+    .prev, .next, .index{
+        top: 85%;
+    }
+    .next{
+        right:110px;
+    }
+    
+    .dot{
+        top:50%;
     }
     
     .newsBar{
