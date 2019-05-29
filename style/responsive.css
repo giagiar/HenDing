@@ -73,7 +73,7 @@
     }
     
     .newsBar{
-        width: calc(100vw);
+        width: calc(100vw - 20px);
         height: auto;
         right:0;
         bottom:0;
