@@ -15,37 +15,39 @@
     <link rel="icon" href="pic/logoS.png">
     <link rel="shortcut icon" href="pic/logoL.png">
     <link rel="apple-touch-icon" sizes="180x180" href="pic/logoApple.png">
-    <script src="scripts/function.js"></script>
+    <script src="scripts/jsfunction.js"></script>
 	
 </head>
 
 <body>
     
     <div class="top-column">
+     
+            
         <img class="mark" src="pic/markL.png"/>
         <div class="top-img" id="bannerPic">
         <ul class="bannerImg">  
-            <li class="bannerImg"><img class="bannerImg"  src="pic/IMGP7288.JPG"/></li>
-            <li class="bannerImg"><img class="bannerImg"  src="pic/IMGP6760.JPG"/></li>
-            <li class="bannerImg"><img class="bannerImg"  src="pic/IMGP6857.JPG"/></li>
-            <li class="bannerImg"><img class="bannerImg"  src="pic/IMGP6822.JPG"/></li>
-        </ul>      
-            <ul id="tips">
-            <li class="active"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-
+            <li class="bannerImg"><img class="bannerImg fade"  src="pic/IMGP7288.JPG"/></li>
+            <li class="bannerImg"><img class="bannerImg fade"  src="pic/IMGP6760.JPG"/></li>
+            <li class="bannerImg"><img class="bannerImg fade"  src="pic/IMGP6857.JPG"/></li>
+            <li class="bannerImg"><img class="bannerImg fade"  src="pic/IMGP6822.JPG"/></li>
         </ul>
-        <!-- 左右按鈕 -->
-        <div id="btn">
-            <a href="#" id="up">&lt;</a>
-            <a href="#" id="next">&gt;</a>
-        </div>
-        </div>
+        <!-- Next and previous buttons
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>    -->
 
-    
+        </div> 
+        
+    <!-- The dots/circles
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div> -->
+        <div class="menu"><img src="pic/menu.png"/></div>
         <div class="newsBar"><ul><li><h4> NEWS | 最新消息</h4></li><li><h5>位於桃園的辦公室新落成</h5></li></ul> </div>
+        
+        
     </div>
 
     
@@ -70,27 +72,27 @@
         </div>
     
     <div class="rowCube">
-        <div class="l3s1">
+        <span class="l3s1">
             <ul><li class="blockList"><a class="blockText">／</a></li><li class="blockList"><p class="blockText">LAWYER | 律師介紹</p></li></ul> 
             <div class="container">
                 <img class="square" src="pic/IMGP6822.JPG"/></div>
-        </div>
-        <div class="l3s1">
+        </span>
+        <span class="l3s1">
             <ul ><li class="blockList"><a class="blockText">／</a></li><li class="blockList"><p class="blockText">KNOWLEDGE | 法律知識</p></li></ul>
             <div class="container">
                 <img class="square" src="pic/IMGP6822.JPG"/></div>
-        </div>
-        <div class="l3s1">
+        </span>
+        <span class="l3s1">
             <ul><li class="blockList"><a class="blockText">／</a></li><li class="blockList"><p class="blockText">NEWS | 最新消息</p></li></ul>
             <div class="container">
                 <img class="square" src="pic/IMGP6822.JPG"/></div>
-        </div>
+        </span>
     </div>   
     
     <div id="footer" class="footer">
 		<h5><small>© 恆鼎法律事務所</small></h5>
 		<h4><br>ADD／ 33045 桃園市桃園區藝文一街86-5號15樓<br>TEL／ 03-3163715<br>FAX／ 03-3163700<br>E-mail／ f90180allen@gmail.com</h4>
-					</div>
+	</div>
 				<div class="l-page__footer__pagetop">
 					<div class="c-pagetop"><a href="#toTop"><span></span></a></div>
 				</div>

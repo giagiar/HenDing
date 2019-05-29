@@ -29,6 +29,11 @@ hr {
     background-color: #333D46;   
 }
 
+.menu{
+    float:right;
+    margin-right:30px;
+}
+
 .greyback, .greybackL{
     background-color: #EFEFEF;
     z-index: 5;
@@ -50,28 +55,70 @@ li {
     margin-left: 0;
 }
 
-/******* 一排小圓點************/
-.tips{
-    margin:0;
-    padding:0;
-    z-index:999;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    list-style:none;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
-#tips li{
-width:18px;
-height: 18px;
-border-radius:50%;
-background:#333;
-float:left;
-margin-left:5px;
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-/* 切換到相應的圖片 相應小圓點的顏色 */
-#tips .active{
-background:red;
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 .squareTile, .squareTileR{
@@ -80,9 +127,6 @@ background:red;
 
 .description{
     color: #333746;
-    
-    
-    
 }
 
 
@@ -106,9 +150,6 @@ background:red;
     color: #333D46;
 }
 
-.tileTextR{
-}
-
 .rotate {
     transform-origin: 0 0;
     transform: rotate(-270deg);
@@ -128,14 +169,13 @@ background:red;
 }
 
 .l3s1{
-    float:left;
-    display: table;
+    display: inline-block;
     margin-left: 2%;
 }
 
 .rowCube{
     width: inherit;
-    height:auto;
+    margin-top: 50px;
 }
 
 .blockText{
