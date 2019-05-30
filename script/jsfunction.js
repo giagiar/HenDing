@@ -32,6 +32,6 @@ function showSlides(n) {
 
 function autoplay(){
     clearTimeout(timer);
-    timer=setTimeout(showSlides, 6000);
+    timer=setTimeout(showSlides, 3000);
     slideIndex++;
 }
